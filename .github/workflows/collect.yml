@@ -2,6 +2,8 @@ name: Collect finished Kaggle jobs
 on:
   schedule: [{cron: "17,47 * * * *"}]
   workflow_dispatch: {}
+  push:
+    paths: ["collect/RUN"]
 permissions:
   contents: write
 jobs:
