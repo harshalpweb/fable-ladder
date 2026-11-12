@@ -1,0 +1,47 @@
+[{"stream_name":"stdout","time":31.14204378,"data":"{\n"}
+,{"stream_name":"stdout","time":31.142135501,"data":" \"legacy-datasets/wikipedia\": {\n"}
+,{"stream_name":"stdout","time":31.14214068,"data":"  \"total_files\": 89,\n"}
+,{"stream_name":"stdout","time":31.142143411,"data":"  \"en2022\": [\n"}
+,{"stream_name":"stdout","time":31.142145997,"data":"   \"data/20220301.en/train-00000-of-00041.parquet\",\n"}
+,{"stream_name":"stdout","time":31.142148624,"data":"   \"data/20220301.en/train-00001-of-00041.parquet\",\n"}
+,{"stream_name":"stdout","time":31.142151186,"data":"   \"data/20220301.en/train-00002-of-00041.parquet\"\n"}
+,{"stream_name":"stdout","time":31.142153869,"data":"  ],\n"}
+,{"stream_name":"stdout","time":31.142156209,"data":"  \"n_en2022\": 41,\n"}
+,{"stream_name":"stdout","time":31.142158641,"data":"  \"sample\": [\n"}
+,{"stream_name":"stdout","time":31.142161079,"data":"   \"data/20220301.de/train-00000-of-00018.parquet\",\n"}
+,{"stream_name":"stdout","time":31.14216349,"data":"   \"data/20220301.de/train-00001-of-00018.parquet\",\n"}
+,{"stream_name":"stdout","time":31.1421659,"data":"   \"data/20220301.de/train-00002-of-00018.parquet\"\n"}
+,{"stream_name":"stdout","time":31.14216833,"data":"  ]\n"}
+,{"stream_name":"stdout","time":31.142170704,"data":" },\n"}
+,{"stream_name":"stdout","time":31.142173166,"data":" \"wikimedia/wikipedia\": {\n"}
+,{"stream_name":"stdout","time":31.142175668,"data":"  \"total_files\": 557,\n"}
+,{"stream_name":"stdout","time":31.142178104,"data":"  \"en2022\": [],\n"}
+,{"stream_name":"stdout","time":31.142180583,"data":"  \"n_en2022\": 0,\n"}
+,{"stream_name":"stdout","time":31.142182949,"data":"  \"sample\": [\n"}
+,{"stream_name":"stdout","time":31.142185329,"data":"   \"20231101.ab/train-00000-of-00001.parquet\",\n"}
+,{"stream_name":"stdout","time":31.142187775,"data":"   \"20231101.ace/train-00000-of-00001.parquet\",\n"}
+,{"stream_name":"stdout","time":31.142190315,"data":"   \"20231101.ady/train-00000-of-00001.parquet\"\n"}
+,{"stream_name":"stdout","time":31.142192893,"data":"  ]\n"}
+,{"stream_name":"stdout","time":31.142195188,"data":" },\n"}
+,{"stream_name":"stdout","time":31.142197596,"data":" \"convert_branch\": \"RevisionNotFoundError('404 Client Error. (Request ID: Root=1-6af52e1e-7b724959522abb5872128f9e;6ca08f83-0bef-4e76-bfca-60450503f54d)\\\\n\\\\nRevision Not Found for url: https://huggingface.co/api/datasets/\",\n"}
+,{"stream_name":"stdout","time":31.142217864,"data":" \"download\": {\n"}
+,{"stream_name":"stdout","time":31.142220491,"data":"  \"file\": \"data/20220301.en/train-00000-of-00041.parquet\",\n"}
+,{"stream_name":"stdout","time":31.142223188,"data":"  \"seconds\": 22.4,\n"}
+,{"stream_name":"stdout","time":31.142225888,"data":"  \"rows\": 157529,\n"}
+,{"stream_name":"stdout","time":31.142235787,"data":"  \"columns\": [\n"}
+,{"stream_name":"stdout","time":31.142238402,"data":"   \"id\",\n"}
+,{"stream_name":"stdout","time":31.142240786,"data":"   \"url\",\n"}
+,{"stream_name":"stdout","time":31.14224316,"data":"   \"title\",\n"}
+,{"stream_name":"stdout","time":31.14224552,"data":"   \"text\"\n"}
+,{"stream_name":"stdout","time":31.142248072,"data":"  ],\n"}
+,{"stream_name":"stdout","time":31.142250419,"data":"  \"first_title\": \"Anarchism\",\n"}
+,{"stream_name":"stdout","time":31.142253024,"data":"  \"chars\": 42387117\n"}
+,{"stream_name":"stdout","time":31.142255509,"data":" }\n"}
+,{"stream_name":"stdout","time":31.142257815,"data":"}\n"}
+,{"stream_name":"stderr","time":34.836874066,"data":"/usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":34.836922031,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":35.256544037,"data":"/usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":35.256582344,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":37.546963052,"data":"[NbConvertApp] Converting notebook __script__.ipynb to html\n"}
+,{"stream_name":"stderr","time":39.110186084,"data":"[NbConvertApp] Writing 286296 bytes to __results__.html\n"}
+]

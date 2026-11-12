@@ -1,0 +1,40 @@
+{
+ "legacy-datasets/wikipedia": {
+  "total_files": 89,
+  "en2022": [
+   "data/20220301.en/train-00000-of-00041.parquet",
+   "data/20220301.en/train-00001-of-00041.parquet",
+   "data/20220301.en/train-00002-of-00041.parquet"
+  ],
+  "n_en2022": 41,
+  "sample": [
+   "data/20220301.de/train-00000-of-00018.parquet",
+   "data/20220301.de/train-00001-of-00018.parquet",
+   "data/20220301.de/train-00002-of-00018.parquet"
+  ]
+ },
+ "wikimedia/wikipedia": {
+  "total_files": 557,
+  "en2022": [],
+  "n_en2022": 0,
+  "sample": [
+   "20231101.ab/train-00000-of-00001.parquet",
+   "20231101.ace/train-00000-of-00001.parquet",
+   "20231101.ady/train-00000-of-00001.parquet"
+  ]
+ },
+ "convert_branch": "RevisionNotFoundError('404 Client Error. (Request ID: Root=1-6af52e1e-7b724959522abb5872128f9e;6ca08f83-0bef-4e76-bfca-60450503f54d)\\n\\nRevision Not Found for url: https://huggingface.co/api/datasets/",
+ "download": {
+  "file": "data/20220301.en/train-00000-of-00041.parquet",
+  "seconds": 22.4,
+  "rows": 157529,
+  "columns": [
+   "id",
+   "url",
+   "title",
+   "text"
+  ],
+  "first_title": "Anarchism",
+  "chars": 42387117
+ }
+}
