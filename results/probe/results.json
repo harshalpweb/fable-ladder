@@ -1,0 +1,13 @@
+{
+ "time": "2026-11-12 02:46:21",
+ "nvidia_smi": "Tesla T4, 15360 MiB\nTesla T4, 15360 MiB",
+ "torch": "2.11.0+cu130",
+ "cuda": true,
+ "gpus": 2,
+ "matmul_tflops_fp16": 20.1,
+ "net_huggingface": 200,
+ "net_github": 200,
+ "has_tokenizers": "0.23.3",
+ "has_datasets": "4.8.5",
+ "has_numpy": "2.1.3"
+}
