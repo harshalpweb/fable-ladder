@@ -21,11 +21,14 @@ jobs:
       - name: Pick the job
         run: |
           JOB="${{ github.event.inputs.job }}"
-          if [ -z "$JOB" ]; then JOB=$(git diff --name-only HEAD~1 HEAD | grep -E '^jobs/[^/]+/RUN$' | head -1 | cut -d/ -f2); fi
+          if [ -z "$JOB" ]; then JOB=$(for f in jobs/*/RUN; do echo "$(cat $f) $f"; done | sort | tail -1 | cut -d/ -f2); fi
           echo "JOB=$JOB" >> $GITHUB_ENV; echo "job: $JOB"
           if [ -z "$KAGGLE_USERNAME" ]; then echo "::error::KAGGLE_USERNAME secret is missing"; exit 1; fi
           if [ -z "$KAGGLE_KEY" ] && [ -z "$KAGGLE_API_TOKEN" ]; then echo "::error::KAGGLE_KEY or KAGGLE_API_TOKEN secret is missing"; exit 1; fi
       - run: pip install -q kaggle
+      - name: Drop empty credentials
+        run: |
+          [ -z "$KAGGLE_API_TOKEN" ] && echo "KAGGLE_API_TOKEN=" >> /dev/null; true
       - name: Push to Kaggle
         run: |
           SLUG="fable-ladder-$JOB"
