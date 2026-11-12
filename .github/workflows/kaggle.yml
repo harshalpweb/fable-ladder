@@ -1,0 +1,57 @@
+name: Run a job on Kaggle
+on:
+  push:
+    paths: ["jobs/*/RUN"]
+  workflow_dispatch:
+    inputs:
+      job: {description: "job folder under jobs/", required: true, default: "probe"}
+permissions:
+  contents: write
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 350
+    env:
+      KAGGLE_USERNAME: ${{ secrets.KAGGLE_USERNAME }}
+      KAGGLE_KEY: ${{ secrets.KAGGLE_KEY }}
+      KAGGLE_API_TOKEN: ${{ secrets.KAGGLE_API_TOKEN }}
+    steps:
+      - uses: actions/checkout@v4
+        with: {fetch-depth: 2}
+      - name: Pick the job
+        run: |
+          JOB="${{ github.event.inputs.job }}"
+          if [ -z "$JOB" ]; then JOB=$(git diff --name-only HEAD~1 HEAD | grep -E '^jobs/[^/]+/RUN$' | head -1 | cut -d/ -f2); fi
+          echo "JOB=$JOB" >> $GITHUB_ENV; echo "job: $JOB"
+          if [ -z "$KAGGLE_USERNAME" ]; then echo "::error::KAGGLE_USERNAME secret is missing"; exit 1; fi
+          if [ -z "$KAGGLE_KEY" ] && [ -z "$KAGGLE_API_TOKEN" ]; then echo "::error::KAGGLE_KEY or KAGGLE_API_TOKEN secret is missing"; exit 1; fi
+      - run: pip install -q kaggle
+      - name: Push to Kaggle
+        run: |
+          SLUG="fable-ladder-$JOB"
+          mkdir -p /tmp/k && cp jobs/$JOB/main.py /tmp/k/main.py
+          GPU=true; [ -f jobs/$JOB/NOGPU ] && GPU=false
+          cat > /tmp/k/kernel-metadata.json <<META
+          {"id": "$KAGGLE_USERNAME/$SLUG", "title": "$SLUG", "code_file": "main.py", "language": "python", "kernel_type": "script",
+           "is_private": true, "enable_gpu": $GPU, "enable_internet": true, "dataset_sources": [], "competition_sources": [], "kernel_sources": []}
+          META
+          echo "SLUG=$SLUG" >> $GITHUB_ENV
+          kaggle kernels push -p /tmp/k 2>&1 | tee /tmp/push.log
+          if grep -qiE "error|denied|unauthorized|40[0-9]" /tmp/push.log; then echo "::error::push to Kaggle failed"; exit 1; fi
+      - name: Wait for it to finish
+        run: |
+          for i in $(seq 1 660); do
+            S=$(kaggle kernels status "$KAGGLE_USERNAME/$SLUG" 2>&1 | tail -1); echo "$(date -u +%H:%M:%S) $S"
+            echo "$S" | grep -qiE "complete|error|cancel" && break
+            sleep 30
+          done
+          echo "FINAL=$S" >> $GITHUB_ENV
+      - name: Fetch output and commit
+        if: always()
+        run: |
+          mkdir -p results/$JOB && kaggle kernels output "$KAGGLE_USERNAME/$SLUG" -p results/$JOB 2>&1 | tail -3 || true
+          echo "${FINAL:-no status} ($(date -u +%Y-%m-%dT%H:%M:%SZ))" > results/$JOB/STATUS.txt
+          cp /tmp/push.log results/$JOB/push.log 2>/dev/null || true
+          git config user.name "fable-ladder-bot"; git config user.email "noreply@github.com"
+          git add results/ && git commit -q -m "Results for job $JOB" || echo "nothing to commit"
+          git pull -q --rebase origin main && git push -q origin HEAD:main
