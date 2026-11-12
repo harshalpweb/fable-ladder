@@ -1,0 +1,101 @@
+[{"stream_name":"stdout","time":24.627414392,"data":"[   0.4 min] device cuda\n"}
+,{"stream_name":"stdout","time":477.004416281,"data":"[   7.9 min] reactions 409006 39994\n"}
+,{"stream_name":"stdout","time":511.786450441,"data":"[   8.5 min] train kept 408800 of 409006 vocab 307\n"}
+,{"stream_name":"stdout","time":512.485977028,"data":"[   8.5 min] parameters 14409600\n"}
+,{"stream_name":"stderr","time":519.76368025,"data":"/kaggle/src/script.py:73: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.\n"}
+,{"stream_name":"stderr","time":519.763710431,"data":"  opt = torch.optim.AdamW(m.parameters(), lr=1e-3, betas=(0.9, 0.98), weight_decay=0.01); scaler = torch.cuda.amp.GradScaler(enabled=DEV == \"cuda\")\n"}
+,{"stream_name":"stdout","time":790.966610577,"data":"[  13.2 min] epoch 1 step 2000 loss 0.4000 lr 1.00e-03\n"}
+,{"stream_name":"stdout","time":1069.908038552,"data":"[  17.8 min] epoch 2 step 4000 loss 0.1743 lr 9.99e-04\n"}
+,{"stream_name":"stdout","time":1346.285769166,"data":"[  22.4 min] epoch 2 step 6000 loss 0.1153 lr 9.97e-04\n"}
+,{"stream_name":"stdout","time":1624.387583465,"data":"[  27.0 min] epoch 3 step 8000 loss 0.0878 lr 9.95e-04\n"}
+,{"stream_name":"stdout","time":1899.145975975,"data":"[  31.6 min] epoch 4 step 10000 loss 0.0756 lr 9.92e-04\n"}
+,{"stream_name":"stdout","time":2175.910741033,"data":"[  36.2 min] epoch 4 step 12000 loss 0.0672 lr 9.88e-04\n"}
+,{"stream_name":"stdout","time":2448.617949135,"data":"[  40.8 min] epoch 5 step 14000 loss 0.0608 lr 9.84e-04\n"}
+,{"stream_name":"stdout","time":2726.503150381,"data":"[  45.4 min] epoch 6 step 16000 loss 0.0555 lr 9.79e-04\n"}
+,{"stream_name":"stdout","time":3001.370411731,"data":"[  50.0 min] epoch 6 step 18000 loss 0.0490 lr 9.73e-04\n"}
+,{"stream_name":"stdout","time":3278.587554943,"data":"[  54.6 min] epoch 7 step 20000 loss 0.0440 lr 9.67e-04\n"}
+,{"stream_name":"stdout","time":3556.153904055,"data":"[  59.2 min] epoch 7 step 22000 loss 0.0440 lr 9.60e-04\n"}
+,{"stream_name":"stdout","time":3828.073747061,"data":"[  63.8 min] epoch 8 step 24000 loss 0.0411 lr 9.53e-04\n"}
+,{"stream_name":"stdout","time":4102.975001742,"data":"[  68.4 min] epoch 9 step 26000 loss 0.0345 lr 9.45e-04\n"}
+,{"stream_name":"stdout","time":4377.468697007,"data":"[  72.9 min] epoch 9 step 28000 loss 0.0374 lr 9.37e-04\n"}
+,{"stream_name":"stdout","time":4653.421791752,"data":"[  77.5 min] epoch 10 step 30000 loss 0.0341 lr 9.27e-04\n"}
+,{"stream_name":"stdout","time":4925.88358827,"data":"[  82.1 min] epoch 11 step 32000 loss 0.0315 lr 9.18e-04\n"}
+,{"stream_name":"stdout","time":5202.219294503,"data":"[  86.7 min] epoch 11 step 34000 loss 0.0313 lr 9.08e-04\n"}
+,{"stream_name":"stdout","time":5475.767037001,"data":"[  91.2 min] epoch 12 step 36000 loss 0.0271 lr 8.97e-04\n"}
+,{"stream_name":"stdout","time":5750.985601382,"data":"[  95.8 min] epoch 12 step 38000 loss 0.0279 lr 8.86e-04\n"}
+,{"stream_name":"stdout","time":6030.23235449,"data":"[ 100.5 min] epoch 13 step 40000 loss 0.0256 lr 8.74e-04\n"}
+,{"stream_name":"stdout","time":6305.087931221,"data":"[ 105.1 min] epoch 14 step 42000 loss 0.0209 lr 8.61e-04\n"}
+,{"stream_name":"stdout","time":6579.538383926,"data":"[ 109.6 min] epoch 14 step 44000 loss 0.0257 lr 8.49e-04\n"}
+,{"stream_name":"stdout","time":6852.460805717,"data":"[ 114.2 min] epoch 15 step 46000 loss 0.0214 lr 8.36e-04\n"}
+,{"stream_name":"stdout","time":7129.910367355,"data":"[ 118.8 min] epoch 16 step 48000 loss 0.0201 lr 8.22e-04\n"}
+,{"stream_name":"stdout","time":7402.173604626,"data":"[ 123.3 min] epoch 16 step 50000 loss 0.0200 lr 8.08e-04\n"}
+,{"stream_name":"stdout","time":7678.727582133,"data":"[ 128.0 min] epoch 17 step 52000 loss 0.0175 lr 7.93e-04\n"}
+,{"stream_name":"stdout","time":7953.176277521,"data":"[ 132.5 min] epoch 17 step 54000 loss 0.0194 lr 7.79e-04\n"}
+,{"stream_name":"stdout","time":8232.307974637,"data":"[ 137.2 min] epoch 18 step 56000 loss 0.0164 lr 7.63e-04\n"}
+,{"stream_name":"stdout","time":8502.516942129,"data":"[ 141.7 min] epoch 19 step 58000 loss 0.0138 lr 7.48e-04\n"}
+,{"stream_name":"stdout","time":8776.450526131,"data":"[ 146.2 min] epoch 19 step 60000 loss 0.0155 lr 7.32e-04\n"}
+,{"stream_name":"stdout","time":9055.019070223,"data":"[ 150.9 min] epoch 20 step 62000 loss 0.0139 lr 7.16e-04\n"}
+,{"stream_name":"stdout","time":9322.67626753,"data":"[ 155.4 min] epoch 21 step 64000 loss 0.0122 lr 7.00e-04\n"}
+,{"stream_name":"stdout","time":9597.427058725,"data":"[ 159.9 min] epoch 21 step 66000 loss 0.0136 lr 6.84e-04\n"}
+,{"stream_name":"stdout","time":9868.790362992,"data":"[ 164.5 min] epoch 22 step 68000 loss 0.0110 lr 6.67e-04\n"}
+,{"stream_name":"stdout","time":10142.585430928,"data":"[ 169.0 min] epoch 22 step 70000 loss 0.0124 lr 6.50e-04\n"}
+,{"stream_name":"stdout","time":10412.748346451,"data":"[ 173.5 min] epoch 23 step 72000 loss 0.0110 lr 6.33e-04\n"}
+,{"stream_name":"stdout","time":10687.308177852,"data":"[ 178.1 min] epoch 24 step 74000 loss 0.0091 lr 6.16e-04\n"}
+,{"stream_name":"stdout","time":10960.262693322,"data":"[ 182.6 min] epoch 24 step 76000 loss 0.0104 lr 5.99e-04\n"}
+,{"stream_name":"stdout","time":11231.995610304,"data":"[ 187.2 min] epoch 25 step 78000 loss 0.0091 lr 5.81e-04\n"}
+,{"stream_name":"stdout","time":11505.606805007,"data":"[ 191.7 min] epoch 26 step 80000 loss 0.0071 lr 5.64e-04\n"}
+,{"stream_name":"stdout","time":11780.127635374,"data":"[ 196.3 min] epoch 26 step 82000 loss 0.0085 lr 5.46e-04\n"}
+,{"stream_name":"stdout","time":12053.232966178,"data":"[ 200.9 min] epoch 27 step 84000 loss 0.0071 lr 5.29e-04\n"}
+,{"stream_name":"stdout","time":12325.307046012,"data":"[ 205.4 min] epoch 27 step 86000 loss 0.0077 lr 5.11e-04\n"}
+,{"stream_name":"stdout","time":12597.346137116,"data":"[ 209.9 min] epoch 28 step 88000 loss 0.0064 lr 4.94e-04\n"}
+,{"stream_name":"stdout","time":12866.274656566,"data":"[ 214.4 min] epoch 29 step 90000 loss 0.0055 lr 4.76e-04\n"}
+,{"stream_name":"stdout","time":13139.292793405,"data":"[ 219.0 min] epoch 29 step 92000 loss 0.0062 lr 4.59e-04\n"}
+,{"stream_name":"stdout","time":13413.35780235,"data":"[ 223.5 min] epoch 30 step 94000 loss 0.0051 lr 4.42e-04\n"}
+,{"stream_name":"stdout","time":13684.488684941,"data":"[ 228.0 min] epoch 31 step 96000 loss 0.0042 lr 4.24e-04\n"}
+,{"stream_name":"stdout","time":13957.607240769,"data":"[ 232.6 min] epoch 31 step 98000 loss 0.0048 lr 4.07e-04\n"}
+,{"stream_name":"stdout","time":14232.533376783,"data":"[ 237.2 min] epoch 32 step 100000 loss 0.0039 lr 3.90e-04\n"}
+,{"stream_name":"stdout","time":14502.042049816,"data":"[ 241.7 min] epoch 32 step 102000 loss 0.0042 lr 3.74e-04\n"}
+,{"stream_name":"stdout","time":14772.996469694,"data":"[ 246.2 min] epoch 33 step 104000 loss 0.0036 lr 3.57e-04\n"}
+,{"stream_name":"stdout","time":15045.927264166,"data":"[ 250.7 min] epoch 34 step 106000 loss 0.0028 lr 3.41e-04\n"}
+,{"stream_name":"stdout","time":15317.31762926,"data":"[ 255.3 min] epoch 34 step 108000 loss 0.0031 lr 3.25e-04\n"}
+,{"stream_name":"stdout","time":15591.577752414,"data":"[ 259.8 min] epoch 35 step 110000 loss 0.0026 lr 3.09e-04\n"}
+,{"stream_name":"stdout","time":15860.717452662,"data":"[ 264.3 min] epoch 36 step 112000 loss 0.0020 lr 2.94e-04\n"}
+,{"stream_name":"stdout","time":16129.497785546,"data":"[ 268.8 min] epoch 36 step 114000 loss 0.0025 lr 2.79e-04\n"}
+,{"stream_name":"stdout","time":16403.073557448,"data":"[ 273.4 min] epoch 37 step 116000 loss 0.0019 lr 2.64e-04\n"}
+,{"stream_name":"stdout","time":16670.772274311,"data":"[ 277.8 min] epoch 37 step 118000 loss 0.0021 lr 2.50e-04\n"}
+,{"stream_name":"stdout","time":16944.252127428,"data":"[ 282.4 min] epoch 38 step 120000 loss 0.0017 lr 2.36e-04\n"}
+,{"stream_name":"stdout","time":17211.967826915,"data":"[ 286.8 min] epoch 39 step 122000 loss 0.0014 lr 2.22e-04\n"}
+,{"stream_name":"stdout","time":17482.247641635,"data":"[ 291.3 min] epoch 39 step 124000 loss 0.0014 lr 2.09e-04\n"}
+,{"stream_name":"stdout","time":17751.250513578,"data":"[ 295.8 min] epoch 40 step 126000 loss 0.0012 lr 1.96e-04\n"}
+,{"stream_name":"stdout","time":18019.573941262,"data":"[ 300.3 min] epoch 41 step 128000 loss 0.0009 lr 1.84e-04\n"}
+,{"stream_name":"stdout","time":18289.37292587,"data":"[ 304.8 min] epoch 41 step 130000 loss 0.0010 lr 1.72e-04\n"}
+,{"stream_name":"stdout","time":18556.903805603,"data":"[ 309.3 min] epoch 42 step 132000 loss 0.0010 lr 1.61e-04\n"}
+,{"stream_name":"stdout","time":18824.644653429,"data":"[ 313.7 min] epoch 42 step 134000 loss 0.0009 lr 1.50e-04\n"}
+,{"stream_name":"stdout","time":19091.012991832,"data":"[ 318.2 min] epoch 43 step 136000 loss 0.0008 lr 1.40e-04\n"}
+,{"stream_name":"stdout","time":19359.896044975,"data":"[ 322.6 min] epoch 44 step 138000 loss 0.0007 lr 1.30e-04\n"}
+,{"stream_name":"stdout","time":19626.242196491,"data":"[ 327.1 min] epoch 44 step 140000 loss 0.0006 lr 1.21e-04\n"}
+,{"stream_name":"stdout","time":19891.358825693,"data":"[ 331.5 min] epoch 45 step 142000 loss 0.0007 lr 1.12e-04\n"}
+,{"stream_name":"stdout","time":20160.002772353,"data":"[ 336.0 min] epoch 46 step 144000 loss 0.0004 lr 1.04e-04\n"}
+,{"stream_name":"stdout","time":20422.824480127,"data":"[ 340.4 min] epoch 46 step 146000 loss 0.0006 lr 9.61e-05\n"}
+,{"stream_name":"stdout","time":20691.054083159,"data":"[ 344.8 min] epoch 47 step 148000 loss 0.0004 lr 8.90e-05\n"}
+,{"stream_name":"stdout","time":20958.497368525,"data":"[ 349.3 min] epoch 47 step 150000 loss 0.0005 lr 8.24e-05\n"}
+,{"stream_name":"stdout","time":21224.426675323,"data":"[ 353.7 min] epoch 48 step 152000 loss 0.0004 lr 7.65e-05\n"}
+,{"stream_name":"stdout","time":21489.178590864,"data":"[ 358.1 min] epoch 49 step 154000 loss 0.0003 lr 7.12e-05\n"}
+,{"stream_name":"stdout","time":21755.535344476,"data":"[ 362.6 min] epoch 49 step 156000 loss 0.0004 lr 6.64e-05\n"}
+,{"stream_name":"stdout","time":22018.871782009,"data":"[ 367.0 min] epoch 50 step 158000 loss 0.0003 lr 6.23e-05\n"}
+,{"stream_name":"stdout","time":22284.586811691,"data":"[ 371.4 min] epoch 51 step 160000 loss 0.0002 lr 5.87e-05\n"}
+,{"stream_name":"stdout","time":22549.124311766,"data":"[ 375.8 min] epoch 51 step 162000 loss 0.0004 lr 5.58e-05\n"}
+,{"stream_name":"stdout","time":22812.192612144,"data":"[ 380.2 min] epoch 52 step 164000 loss 0.0002 lr 5.34e-05\n"}
+,{"stream_name":"stdout","time":23077.15440213,"data":"[ 384.6 min] epoch 52 step 166000 loss 0.0003 lr 5.17e-05\n"}
+,{"stream_name":"stdout","time":23339.447808156,"data":"[ 389.0 min] epoch 53 step 168000 loss 0.0003 lr 5.06e-05\n"}
+,{"stream_name":"stdout","time":23605.553817949,"data":"[ 393.4 min] epoch 54 step 170000 loss 0.0002 lr 5.00e-05\n"}
+,{"stream_name":"stdout","time":23701.711232348,"data":"[ 395.0 min] training done 54 epochs 170735 steps\n"}
+,{"stream_name":"stdout","time":24073.346426288,"data":"[ 401.2 min] USPTO test top-1 1628/2000 = 0.814; valid SMILES 0.995\n"}
+,{"stream_name":"stdout","time":24073.347242216,"data":"done\n"}
+,{"stream_name":"stderr","time":24084.150558917,"data":"/usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":24084.150596879,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":24084.670110411,"data":"/usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":24084.670143122,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":24085.789964925,"data":"[NbConvertApp] Converting notebook __script__.ipynb to html\n"}
+,{"stream_name":"stderr","time":24087.313834977,"data":"[NbConvertApp] Writing 331902 bytes to __results__.html\n"}
+]
