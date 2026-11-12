@@ -26,9 +26,20 @@ jobs:
           if [ -z "$KAGGLE_USERNAME" ]; then echo "::error::KAGGLE_USERNAME secret is missing"; exit 1; fi
           if [ -z "$KAGGLE_KEY" ] && [ -z "$KAGGLE_API_TOKEN" ]; then echo "::error::KAGGLE_KEY or KAGGLE_API_TOKEN secret is missing"; exit 1; fi
       - run: pip install -q kaggle
-      - name: Drop empty credentials
+      - name: Set up Kaggle credentials (old or new token form)
         run: |
-          [ -z "$KAGGLE_API_TOKEN" ] && echo "KAGGLE_API_TOKEN=" >> /dev/null; true
+          mkdir -p ~/.kaggle
+          TOK="$KAGGLE_API_TOKEN"; KEY="$KAGGLE_KEY"
+          case "$KEY" in KGAT_*) TOK="$KEY"; KEY="";; esac
+          if [ -n "$TOK" ]; then
+            printf '%s' "$TOK" > ~/.kaggle/access_token; chmod 600 ~/.kaggle/access_token
+            echo "KAGGLE_API_TOKEN=$TOK" >> $GITHUB_ENV; echo "KAGGLE_KEY=" >> $GITHUB_ENV; echo "credential form: new token"
+          else
+            printf '{"username":"%s","key":"%s"}' "$KAGGLE_USERNAME" "$KEY" > ~/.kaggle/kaggle.json; chmod 600 ~/.kaggle/kaggle.json
+            echo "credential form: username and key (key length ${#KEY})"
+          fi
+          kaggle kernels list --mine --page-size 1 2>&1 | tail -3 | tee /tmp/auth.log
+          if grep -qiE "Authentication required|401|403|unauthorized" /tmp/auth.log; then echo "::error::Kaggle did not accept the credentials"; exit 1; fi
       - name: Push to Kaggle
         run: |
           SLUG="fable-ladder-$JOB"
@@ -40,12 +51,12 @@ jobs:
           META
           echo "SLUG=$SLUG" >> $GITHUB_ENV
           kaggle kernels push -p /tmp/k 2>&1 | tee /tmp/push.log
-          if grep -qiE "error|denied|unauthorized|40[0-9]" /tmp/push.log; then echo "::error::push to Kaggle failed"; exit 1; fi
+          if grep -qiE "error|denied|unauthorized|Authentication required|40[0-9]" /tmp/push.log; then echo "::error::push to Kaggle failed"; exit 1; fi
       - name: Wait for it to finish
         run: |
           for i in $(seq 1 660); do
             S=$(kaggle kernels status "$KAGGLE_USERNAME/$SLUG" 2>&1 | tail -1); echo "$(date -u +%H:%M:%S) $S"
-            echo "$S" | grep -qiE "complete|error|cancel" && break
+            echo "$S" | grep -qiE "complete|error|cancel|Authentication required|40[0-9]" && break
             sleep 30
           done
           echo "FINAL=$S" >> $GITHUB_ENV
