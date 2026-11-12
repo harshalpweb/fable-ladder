@@ -1,0 +1,302 @@
+{
+ "started": "2026-11-12 03:13:51",
+ "smoke": false,
+ "log": [
+  "device cuda Tesla T4",
+  "exam items 1162",
+  "reading text",
+  "gsm8k train problems 7473",
+  "aqua train problems 97467",
+  "nq-open train questions 87925",
+  "tokenizer trained, vocab 16384",
+  "wikipedia 20220301.en chars 3206824899 files 3",
+  "tokens: wiki 806.8M, maths 35.6M, qa 2.0M",
+  "rung 1e+15: width 192, layers 6, FLOPs/token 3.48e+07, planned tokens 28.7M",
+  "  step 51/876 loss 8.263 127.9k tok/s",
+  "  step 88/876 loss 7.351 136.8k tok/s",
+  "  step 175/876 loss 6.219 142.8k tok/s",
+  "  step 262/876 loss 5.733 144.1k tok/s",
+  "  step 349/876 loss 5.472 144.5k tok/s",
+  "  step 436/876 loss 5.232 144.0k tok/s",
+  "  step 523/876 loss 5.099 142.7k tok/s",
+  "  step 610/876 loss 4.981 141.5k tok/s",
+  "  step 697/876 loss 4.935 140.9k tok/s",
+  "  step 784/876 loss 4.845 140.6k tok/s",
+  "  step 871/876 loss 4.797 140.3k tok/s",
+  "rung 1e+15 scores {\"gpqa_dev\": [25, 99], \"gpqa_hidden\": [23, 99], \"mmlupro_dev\": [24, 150], \"mmlupro_hidden\": [19, 150], \"gsm8k_dev\": [0, 100], \"gsm8k_hidden\": [0, 100], \"nqopen_dev\": [0, 150], \"nqopen_hidden\": [0, 150], \"humaneval_dev\": [0, 82], \"humaneval_hidden\": [0, 82]}",
+  "rung 1e+16: width 320, layers 8, FLOPs/token 9.05e+07, planned tokens 110.5M",
+  "  step 51/3372 loss 8.409 76.1k tok/s",
+  "  step 338/3372 loss 5.229 76.2k tok/s",
+  "  step 675/3372 loss 4.541 76.6k tok/s",
+  "  step 1012/3372 loss 4.119 76.7k tok/s",
+  "  step 1349/3372 loss 3.845 76.8k tok/s",
+  "  step 1686/3372 loss 3.679 76.8k tok/s",
+  "  step 2023/3372 loss 3.564 76.8k tok/s",
+  "  step 2360/3372 loss 3.467 76.8k tok/s",
+  "  step 2697/3372 loss 3.451 76.9k tok/s",
+  "  step 3034/3372 loss 3.408 76.9k tok/s",
+  "  step 3371/3372 loss 3.384 76.9k tok/s",
+  "rung 1e+16 scores {\"gpqa_dev\": [16, 99], \"gpqa_hidden\": [23, 99], \"mmlupro_dev\": [20, 150], \"mmlupro_hidden\": [17, 150], \"gsm8k_dev\": [0, 100], \"gsm8k_hidden\": [0, 100], \"nqopen_dev\": [0, 150], \"nqopen_hidden\": [2, 150], \"humaneval_dev\": [0, 82], \"humaneval_hidden\": [0, 82]}",
+  "rung 1e+17: width 512, layers 10, FLOPs/token 2.39e+08, planned tokens 418.1M",
+  "  step 51/17011 loss 8.779 41.0k tok/s",
+  "  step 1702/17011 loss 3.692 41.9k tok/s",
+  "  step 3403/17011 loss 3.337 41.9k tok/s",
+  "  step 5104/17011 loss 3.235 41.9k tok/s",
+  "  step 6805/17011 loss 3.112 41.9k tok/s",
+  "  step 8506/17011 loss 3.039 41.9k tok/s",
+  "  step 10207/17011 loss 2.962 41.9k tok/s",
+  "  step 11908/17011 loss 2.918 41.9k tok/s",
+  "  step 13609/17011 loss 2.877 41.9k tok/s",
+  "  step 15310/17011 loss 2.860 41.9k tok/s",
+  "  step 17011/17011 loss 2.805 41.9k tok/s",
+  "rung 1e+17 scores {\"gpqa_dev\": [28, 99], \"gpqa_hidden\": [24, 99], \"mmlupro_dev\": [23, 150], \"mmlupro_hidden\": [27, 150], \"gsm8k_dev\": [0, 100], \"gsm8k_hidden\": [2, 100], \"nqopen_dev\": [4, 150], \"nqopen_hidden\": [3, 150], \"humaneval_dev\": [0, 82], \"humaneval_hidden\": [0, 82]}",
+  "rung 3e+17: width 640, layers 12, FLOPs/token 4.17e+08, planned tokens 719.4M",
+  "  step 51/35128 loss 8.993 26.3k tok/s",
+  "  step 3513/35128 loss 3.368 26.0k tok/s",
+  "  step 7025/35128 loss 3.142 26.0k tok/s",
+  "  step 10537/35128 loss 2.996 26.0k tok/s",
+  "  step 14049/35128 loss 2.919 26.0k tok/s",
+  "  step 17561/35128 loss 2.828 26.0k tok/s",
+  "  step 21073/35128 loss 2.788 26.0k tok/s",
+  "  step 24585/35128 loss 2.729 26.0k tok/s",
+  "  step 28097/35128 loss 2.685 26.0k tok/s",
+  "  rung cut short by the time budget",
+  "rung 3e+17 scores {\"gpqa_dev\": [24, 99], \"gpqa_hidden\": [24, 99], \"mmlupro_dev\": [21, 150], \"mmlupro_hidden\": [26, 150], \"gsm8k_dev\": [0, 100], \"gsm8k_hidden\": [0, 100], \"nqopen_dev\": [6, 150], \"nqopen_hidden\": [3, 150], \"humaneval_dev\": [0, 82], \"humaneval_hidden\": [0, 82]}"
+ ],
+ "rungs": [
+  {
+   "steps_planned": 876,
+   "steps_done": 876,
+   "tokens": 28704768,
+   "C_actual": 999708533194752,
+   "train_loss": 4.7991288891813495,
+   "seconds": 204.6653916835785,
+   "tok_per_s": 140252.18103154135,
+   "C": 1000000000000000.0,
+   "width": 192,
+   "layers": 6,
+   "scores": {
+    "gpqa_dev": [
+     25,
+     99
+    ],
+    "gpqa_hidden": [
+     23,
+     99
+    ],
+    "mmlupro_dev": [
+     24,
+     150
+    ],
+    "mmlupro_hidden": [
+     19,
+     150
+    ],
+    "gsm8k_dev": [
+     0,
+     100
+    ],
+    "gsm8k_hidden": [
+     0,
+     100
+    ],
+    "nqopen_dev": [
+     0,
+     150
+    ],
+    "nqopen_hidden": [
+     0,
+     150
+    ],
+    "humaneval_dev": [
+     0,
+     82
+    ],
+    "humaneval_hidden": [
+     0,
+     82
+    ]
+   },
+   "eval_seconds": 112.66205525398254
+  },
+  {
+   "steps_planned": 3372,
+   "steps_done": 3372,
+   "tokens": 110493696,
+   "C_actual": 9999803240939520,
+   "train_loss": 3.386516533004517,
+   "seconds": 1437.2047834396362,
+   "tok_per_s": 76880.9686180689,
+   "C": 1e+16,
+   "width": 320,
+   "layers": 8,
+   "scores": {
+    "gpqa_dev": [
+     16,
+     99
+    ],
+    "gpqa_hidden": [
+     23,
+     99
+    ],
+    "mmlupro_dev": [
+     20,
+     150
+    ],
+    "mmlupro_hidden": [
+     17,
+     150
+    ],
+    "gsm8k_dev": [
+     0,
+     100
+    ],
+    "gsm8k_hidden": [
+     0,
+     100
+    ],
+    "nqopen_dev": [
+     0,
+     150
+    ],
+    "nqopen_hidden": [
+     2,
+     150
+    ],
+    "humaneval_dev": [
+     0,
+     82
+    ],
+    "humaneval_hidden": [
+     0,
+     82
+    ]
+   },
+   "eval_seconds": 274.4254117012024
+  },
+  {
+   "steps_planned": 17011,
+   "steps_done": 17011,
+   "tokens": 418062336,
+   "C_actual": 99999761603493888,
+   "train_loss": 2.8045124737843277,
+   "seconds": 9983.174763202667,
+   "tok_per_s": 41876.692119130406,
+   "C": 1e+17,
+   "width": 512,
+   "layers": 10,
+   "scores": {
+    "gpqa_dev": [
+     28,
+     99
+    ],
+    "gpqa_hidden": [
+     24,
+     99
+    ],
+    "mmlupro_dev": [
+     23,
+     150
+    ],
+    "mmlupro_hidden": [
+     27,
+     150
+    ],
+    "gsm8k_dev": [
+     0,
+     100
+    ],
+    "gsm8k_hidden": [
+     2,
+     100
+    ],
+    "nqopen_dev": [
+     4,
+     150
+    ],
+    "nqopen_hidden": [
+     3,
+     150
+    ],
+    "humaneval_dev": [
+     0,
+     82
+    ],
+    "humaneval_hidden": [
+     0,
+     82
+    ]
+   },
+   "eval_seconds": 300.6383833885193
+  },
+  {
+   "steps_planned": 35128,
+   "steps_done": 29069,
+   "tokens": 595333120,
+   "C_actual": 248249910401433600,
+   "train_loss": 2.657510410864079,
+   "seconds": 22910.4892847538,
+   "tok_per_s": 25985.177031841587,
+   "C": 3e+17,
+   "width": 640,
+   "layers": 12,
+   "scores": {
+    "gpqa_dev": [
+     24,
+     99
+    ],
+    "gpqa_hidden": [
+     24,
+     99
+    ],
+    "mmlupro_dev": [
+     21,
+     150
+    ],
+    "mmlupro_hidden": [
+     26,
+     150
+    ],
+    "gsm8k_dev": [
+     0,
+     100
+    ],
+    "gsm8k_hidden": [
+     0,
+     100
+    ],
+    "nqopen_dev": [
+     6,
+     150
+    ],
+    "nqopen_hidden": [
+     3,
+     150
+    ],
+    "humaneval_dev": [
+     0,
+     82
+    ],
+    "humaneval_hidden": [
+     0,
+     82
+    ]
+   },
+   "eval_seconds": 330.5565128326416
+  }
+ ],
+ "exam_sha": "483e9569cf4f235c0dcb753ae5fefcd490474044162b4272c6360e827a9bfab0",
+ "data": {
+  "wiki_tokens": 806823409,
+  "math_tokens": 35593252,
+  "qa_tokens": 2001680,
+  "vocab": 16384,
+  "mix": [
+   0.83,
+   0.15,
+   0.02
+  ]
+ },
+ "finished": "2026-11-12 13:24:23",
+ "total_minutes": 610.5219891389211
+}

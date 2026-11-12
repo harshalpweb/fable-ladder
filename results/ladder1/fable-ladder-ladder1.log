@@ -1,0 +1,80 @@
+[{"stream_name":"stdout","time":10.981509047,"data":"[   0.2 min] device cuda Tesla T4\n"}
+,{"stream_name":"stdout","time":12.908641826,"data":"[   0.2 min] exam items 1162\n"}
+,{"stream_name":"stdout","time":12.91265578,"data":"[   0.2 min] reading text\n"}
+,{"stream_name":"stdout","time":13.257423021,"data":"[   0.2 min] gsm8k train problems 7473\n"}
+,{"stream_name":"stdout","time":14.823181119000001,"data":"[   0.2 min] aqua train problems 97467\n"}
+,{"stream_name":"stdout","time":18.677609138,"data":"[   0.3 min] nq-open train questions 87925\n"}
+,{"stream_name":"stderr","time":19.981966058,"data":"Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.\n"}
+,{"stream_name":"stdout","time":78.597427655,"data":"\n"}
+,{"stream_name":"stdout","time":79.638191319,"data":"\n"}
+,{"stream_name":"stdout","time":84.433961554,"data":"\n"}
+,{"stream_name":"stdout","time":84.695546588,"data":"[   1.4 min] tokenizer trained, vocab 16384\n"}
+,{"stream_name":"stdout","time":1025.741871239,"data":"[  17.1 min] wikipedia 20220301.en chars 3206824899 files 3\n"}
+,{"stream_name":"stdout","time":1069.334421683,"data":"[  17.8 min] tokens: wiki 806.8M, maths 35.6M, qa 2.0M\n"}
+,{"stream_name":"stdout","time":1069.756910305,"data":"[  17.8 min] rung 1e+15: width 192, layers 6, FLOPs/token 3.48e+07, planned tokens 28.7M\n"}
+,{"stream_name":"stderr","time":1076.50318646,"data":"/kaggle/src/script.py:233: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.\n"}
+,{"stream_name":"stderr","time":1076.50322968,"data":"  scaler = torch.cuda.amp.GradScaler(enabled=DEV == \"cuda\"); warm = max(1, steps // 50); t0 = time.time(); done = 0; last = 0.0\n"}
+,{"stream_name":"stdout","time":1089.567976082,"data":"[  18.1 min]   step 51/876 loss 8.263 127.9k tok/s\n"}
+,{"stream_name":"stdout","time":1097.58787695,"data":"[  18.3 min]   step 88/876 loss 7.351 136.8k tok/s\n"}
+,{"stream_name":"stdout","time":1116.673940169,"data":"[  18.6 min]   step 175/876 loss 6.219 142.8k tok/s\n"}
+,{"stream_name":"stdout","time":1136.06368508,"data":"[  18.9 min]   step 262/876 loss 5.733 144.1k tok/s\n"}
+,{"stream_name":"stdout","time":1155.634040574,"data":"[  19.2 min]   step 349/876 loss 5.472 144.5k tok/s\n"}
+,{"stream_name":"stdout","time":1175.725866741,"data":"[  19.6 min]   step 436/876 loss 5.232 144.0k tok/s\n"}
+,{"stream_name":"stdout","time":1196.59791625,"data":"[  19.9 min]   step 523/876 loss 5.099 142.7k tok/s\n"}
+,{"stream_name":"stdout","time":1217.746532249,"data":"[  20.3 min]   step 610/876 loss 4.981 141.5k tok/s\n"}
+,{"stream_name":"stdout","time":1238.591695032,"data":"[  20.6 min]   step 697/876 loss 4.935 140.9k tok/s\n"}
+,{"stream_name":"stdout","time":1259.193100584,"data":"[  21.0 min]   step 784/876 loss 4.845 140.6k tok/s\n"}
+,{"stream_name":"stdout","time":1279.972907268,"data":"[  21.3 min]   step 871/876 loss 4.797 140.3k tok/s\n"}
+,{"stream_name":"stdout","time":1393.831352317,"data":"[  23.2 min] rung 1e+15 scores {\"gpqa_dev\": [25, 99], \"gpqa_hidden\": [23, 99], \"mmlupro_dev\": [24, 150], \"mmlupro_hidden\": [19, 150], \"gsm8k_dev\": [0, 100], \"gsm8k_hidden\": [0, 100], \"nqopen_dev\": [0, 150], \"nqopen_hidden\": [0, 150], \"humaneval_dev\": [0, 82], \"humaneval_hidden\": [0, 82]}\n"}
+,{"stream_name":"stdout","time":1394.155970978,"data":"[  23.2 min] rung 1e+16: width 320, layers 8, FLOPs/token 9.05e+07, planned tokens 110.5M\n"}
+,{"stream_name":"stdout","time":1416.122682992,"data":"[  23.6 min]   step 51/3372 loss 8.409 76.1k tok/s\n"}
+,{"stream_name":"stdout","time":1539.443671669,"data":"[  25.6 min]   step 338/3372 loss 5.229 76.2k tok/s\n"}
+,{"stream_name":"stdout","time":1682.959646671,"data":"[  28.0 min]   step 675/3372 loss 4.541 76.6k tok/s\n"}
+,{"stream_name":"stdout","time":1826.463113658,"data":"[  30.4 min]   step 1012/3372 loss 4.119 76.7k tok/s\n"}
+,{"stream_name":"stdout","time":1969.985586319,"data":"[  32.8 min]   step 1349/3372 loss 3.845 76.8k tok/s\n"}
+,{"stream_name":"stdout","time":2113.509578009,"data":"[  35.2 min]   step 1686/3372 loss 3.679 76.8k tok/s\n"}
+,{"stream_name":"stdout","time":2256.990424117,"data":"[  37.6 min]   step 2023/3372 loss 3.564 76.8k tok/s\n"}
+,{"stream_name":"stdout","time":2400.478472526,"data":"[  40.0 min]   step 2360/3372 loss 3.467 76.8k tok/s\n"}
+,{"stream_name":"stdout","time":2543.967034583,"data":"[  42.4 min]   step 2697/3372 loss 3.451 76.9k tok/s\n"}
+,{"stream_name":"stdout","time":2687.451210828,"data":"[  44.8 min]   step 3034/3372 loss 3.408 76.9k tok/s\n"}
+,{"stream_name":"stdout","time":2830.936897624,"data":"[  47.2 min]   step 3371/3372 loss 3.384 76.9k tok/s\n"}
+,{"stream_name":"stdout","time":3105.788388985,"data":"[  51.7 min] rung 1e+16 scores {\"gpqa_dev\": [16, 99], \"gpqa_hidden\": [23, 99], \"mmlupro_dev\": [20, 150], \"mmlupro_hidden\": [17, 150], \"gsm8k_dev\": [0, 100], \"gsm8k_hidden\": [0, 100], \"nqopen_dev\": [0, 150], \"nqopen_hidden\": [2, 150], \"humaneval_dev\": [0, 82], \"humaneval_hidden\": [0, 82]}\n"}
+,{"stream_name":"stdout","time":3106.446379189,"data":"[  51.8 min] rung 1e+17: width 512, layers 10, FLOPs/token 2.39e+08, planned tokens 418.1M\n"}
+,{"stream_name":"stdout","time":3136.994257089,"data":"[  52.3 min]   step 51/17011 loss 8.779 41.0k tok/s\n"}
+,{"stream_name":"stdout","time":4104.527932369,"data":"[  68.4 min]   step 1702/17011 loss 3.692 41.9k tok/s\n"}
+,{"stream_name":"stdout","time":5100.302188195,"data":"[  85.0 min]   step 3403/17011 loss 3.337 41.9k tok/s\n"}
+,{"stream_name":"stdout","time":6098.259178578,"data":"[ 101.6 min]   step 5104/17011 loss 3.235 41.9k tok/s\n"}
+,{"stream_name":"stdout","time":7096.928138463,"data":"[ 118.3 min]   step 6805/17011 loss 3.112 41.9k tok/s\n"}
+,{"stream_name":"stdout","time":8095.322173313,"data":"[ 134.9 min]   step 8506/17011 loss 3.039 41.9k tok/s\n"}
+,{"stream_name":"stdout","time":9093.854436957,"data":"[ 151.5 min]   step 10207/17011 loss 2.962 41.9k tok/s\n"}
+,{"stream_name":"stdout","time":10092.820750348,"data":"[ 168.2 min]   step 11908/17011 loss 2.918 41.9k tok/s\n"}
+,{"stream_name":"stdout","time":11091.521753643,"data":"[ 184.8 min]   step 13609/17011 loss 2.877 41.9k tok/s\n"}
+,{"stream_name":"stdout","time":12090.513866652,"data":"[ 201.5 min]   step 15310/17011 loss 2.860 41.9k tok/s\n"}
+,{"stream_name":"stdout","time":13089.621721477,"data":"[ 218.1 min]   step 17011/17011 loss 2.805 41.9k tok/s\n"}
+,{"stream_name":"stdout","time":13390.262137707,"data":"[ 223.1 min] rung 1e+17 scores {\"gpqa_dev\": [28, 99], \"gpqa_hidden\": [24, 99], \"mmlupro_dev\": [23, 150], \"mmlupro_hidden\": [27, 150], \"gsm8k_dev\": [0, 100], \"gsm8k_hidden\": [2, 100], \"nqopen_dev\": [4, 150], \"nqopen_hidden\": [3, 150], \"humaneval_dev\": [0, 82], \"humaneval_hidden\": [0, 82]}\n"}
+,{"stream_name":"stdout","time":13391.417302946,"data":"[ 223.2 min] rung 3e+17: width 640, layers 12, FLOPs/token 4.17e+08, planned tokens 719.4M\n"}
+,{"stream_name":"stdout","time":13431.11742665,"data":"[ 223.8 min]   step 51/35128 loss 8.993 26.3k tok/s\n"}
+,{"stream_name":"stdout","time":16153.372584711,"data":"[ 269.2 min]   step 3513/35128 loss 3.368 26.0k tok/s\n"}
+,{"stream_name":"stdout","time":18920.497374376,"data":"[ 315.3 min]   step 7025/35128 loss 3.142 26.0k tok/s\n"}
+,{"stream_name":"stdout","time":21689.68953114,"data":"[ 361.5 min]   step 10537/35128 loss 2.996 26.0k tok/s\n"}
+,{"stream_name":"stdout","time":24460.563064627,"data":"[ 407.7 min]   step 14049/35128 loss 2.919 26.0k tok/s\n"}
+,{"stream_name":"stdout","time":27229.940940588,"data":"[ 453.8 min]   step 17561/35128 loss 2.828 26.0k tok/s\n"}
+,{"stream_name":"stdout","time":29998.268928383,"data":"[ 499.9 min]   step 21073/35128 loss 2.788 26.0k tok/s\n"}
+,{"stream_name":"stdout","time":32765.201761701,"data":"[ 546.1 min]   step 24585/35128 loss 2.729 26.0k tok/s\n"}
+,{"stream_name":"stdout","time":35535.386274133,"data":"[ 592.2 min]   step 28097/35128 loss 2.685 26.0k tok/s\n"}
+,{"stream_name":"stdout","time":36301.907820612,"data":"[ 605.0 min]   rung cut short by the time budget\n"}
+,{"stream_name":"stdout","time":36632.466502581,"data":"[ 610.5 min] rung 3e+17 scores {\"gpqa_dev\": [24, 99], \"gpqa_hidden\": [24, 99], \"mmlupro_dev\": [21, 150], \"mmlupro_hidden\": [26, 150], \"gsm8k_dev\": [0, 100], \"gsm8k_hidden\": [0, 100], \"nqopen_dev\": [6, 150], \"nqopen_hidden\": [3, 150], \"humaneval_dev\": [0, 82], \"humaneval_hidden\": [0, 82]}\n"}
+,{"stream_name":"stdout","time":36632.603255464,"data":"\n"}
+,{"stream_name":"stdout","time":36632.603281461,"data":"=== RESULT TABLE (correct / questions; dev and hidden halves) ===\n"}
+,{"stream_name":"stdout","time":36632.603298944,"data":"C=1.00e+15 width 192: gpqa_dev 25/99  gpqa_hidden 23/99  gsm8k_dev 0/100  gsm8k_hidden 0/100  humaneval_dev 0/82  humaneval_hidden 0/82  mmlupro_dev 24/150  mmlupro_hidden 19/150  nqopen_dev 0/150  nqopen_hidden 0/150\n"}
+,{"stream_name":"stdout","time":36632.603304309,"data":"C=1.00e+16 width 320: gpqa_dev 16/99  gpqa_hidden 23/99  gsm8k_dev 0/100  gsm8k_hidden 0/100  humaneval_dev 0/82  humaneval_hidden 0/82  mmlupro_dev 20/150  mmlupro_hidden 17/150  nqopen_dev 0/150  nqopen_hidden 2/150\n"}
+,{"stream_name":"stdout","time":36632.60330932,"data":"C=1.00e+17 width 512: gpqa_dev 28/99  gpqa_hidden 24/99  gsm8k_dev 0/100  gsm8k_hidden 2/100  humaneval_dev 0/82  humaneval_hidden 0/82  mmlupro_dev 23/150  mmlupro_hidden 27/150  nqopen_dev 4/150  nqopen_hidden 3/150\n"}
+,{"stream_name":"stdout","time":36632.603315014,"data":"C=2.48e+17 width 640: gpqa_dev 24/99  gpqa_hidden 24/99  gsm8k_dev 0/100  gsm8k_hidden 0/100  humaneval_dev 0/82  humaneval_hidden 0/82  mmlupro_dev 21/150  mmlupro_hidden 26/150  nqopen_dev 6/150  nqopen_hidden 3/150\n"}
+,{"stream_name":"stdout","time":36632.603320212,"data":"done\n"}
+,{"stream_name":"stderr","time":36639.041214286,"data":"/usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":36639.04124818,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":36639.34068192,"data":"/usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":36639.340716195,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":36640.230635136,"data":"[NbConvertApp] Converting notebook __script__.ipynb to html\n"}
+,{"stream_name":"stderr","time":36641.455961911,"data":"[NbConvertApp] Writing 434423 bytes to __results__.html\n"}
+]

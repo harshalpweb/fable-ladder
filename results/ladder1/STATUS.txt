@@ -1,1 +1,1 @@
-USER/fable-ladder-ladder1 has status "KernelWorkerStatus.RUNNING" (2026-11-12T11:26:40Z)
+USER/fable-ladder-ladder1 has status "KernelWorkerStatus.COMPLETE" (2026-11-12T13:56:35Z)
